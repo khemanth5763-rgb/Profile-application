@@ -1,0 +1,52 @@
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px;
+  font-family: 'Inter', sans-serif;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 15px;
+  padding: 24px;
+  width: 280px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+  border: 1px solid #eee;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+}
+
+.like-button {
+  background: #ff4757;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: scale 0.2s active;
+}
+
+.like-button:active {
+  scale: 0.9;
+}
+
+/* Animation for the message */
+.message-fade {
+  font-size: 0.9rem;
+  color: #57606f;
+  margin-top: 15px;
+  min-height: 40px;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
